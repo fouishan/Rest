@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ns0="http://www.example.org/clinic/schemas/patient" xmlns:ns1="http://cs548.stevens.edu/clinic/dto" targetNamespace="http://www.example.org/clinic/schemas/patient">
+   <xsd:import schemaLocation="cs548.stevens.edu_clinic_dto.xsd" namespace="http://cs548.stevens.edu/clinic/dto"/>
+   <xsd:element name="patient-dto" type="ns1:patientDTO"/>
+</xsd:schema>

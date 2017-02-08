@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://cs548.stevens.edu/clinic/service/web/rest/data/dap" elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://cs548.stevens.edu/clinic/service/web/rest/data/dap">
+
+<!-- links from a representation to resource --> 
+    <complexType name="LinkType">
+    	<attribute name="url" type="anyURI"></attribute>
+    	<attribute name="relation" type="anyURI"></attribute>
+    	<attribute name="mediaType" type="string"></attribute>
+    </complexType>
+</schema>
+
+<!-- 
+relation -> between representaion and resource
+when using operation sas Post, Put, we need to know the type of input that is supposed to be
+output type is usually mentioned in the returned message in the header 
+--> 
